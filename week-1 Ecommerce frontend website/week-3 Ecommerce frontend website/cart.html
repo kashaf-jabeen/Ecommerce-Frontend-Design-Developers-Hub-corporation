@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="top-bar">
+            <div class="logo">
+                <img src="../assests/logo-symbol pic.png" alt="Symbol">
+                <img src="../assests/(logo pic).png" alt="Brand Logo">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <select>
+                    <option>All category</option>
+                    <option>Electronics</option>
+                    <option>Cloths and Wear</option>
+                    <option>Home Interiors</option>
+                    <option>Cloths and Wear</option>
+                    <option>Computer Mobiles</option>
+                    <option>Headphones</option>
+                    <option>Machinery tools</option>
+                </select>
+                <button>Search</button>
+            </div>
+            <div class="user-actions">
+                <a href="#" class="icon-link">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Profile</span>
+                </a>
+                <a href="#" class="icon-link">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>Message</span>
+                </a>
+                <a href="#" class="icon-link">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>Orders</span>
+                </a>
+                <a href="cart.html" class="icon-link cart-link" id="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart-count" class="cart-count">0</span>
+                    <span>My cart</span>
+                </a>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="dropdown">
+                    <a href="#">
+                        <i class="fa-solid fa-bars"></i> All category
+                    </a>
+                    <div class="dropdown-content category-dropdown">
+                        <a href="#">Cloths and Wear</a>
+                        <a href="#">Home Interiors</a>
+                        <a href="#">Computer and Mobiles</a>
+                        <a href="#">Headphones</a>
+                        <a href="#">Machinery tools</a>
+                        <a href="#">Electronics</a>
+                    </div>
+                </li>
+                <li><a href="#">Hot offers</a></li>
+                <li><a href="#">Gift boxes</a></li>
+                <li><a href="#">Projects</a></li>
+                <li class="dropdown"><a href="#">Menu item</a></li> 
+                <li class="dropdown">
+                    <a href="#">Help <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="dropdown-content help-dropdown">
+                        <a href="#">Help Center</a>
+                        <a href="#">FAQs</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Shipping & Returns</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="nav-extra">
+                <div class="language-currency">
+                    <select>
+                        <option>English, USD</option>
+                    </select>
+                </div>
+                <div class="shipping-info">
+                    <select>
+                        <option>Ship to <img src="../assests/37.png" alt="germany"></option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="cart-main-container">
+        <div class="cart-left-section">
+            <section class="shopping-cart-items">
+                <h2 class="cart-heading">My cart </h2>
+                
+                <div class="cart-item-card">
+                    <img src="../assests/10.png" alt="T-shirt" class="item-img">
+                    <div class="item-info">
+                        <h3 class="item-name">Headphones for everyone </h3>
+                        <p class="item-details"> Color: white, Material: Plastic</p>
+                        <div class="item-actions">
+                            <a href="#" class="remove-btn">Remove</a>
+                            <span>|</span>
+                            <a href="#" class="save-later-btn">Save for later</a>
+                        </div>
+                    </div>
+                    <p class="item-price">$98.99</p>
+                    <div class="quantity-selector">
+                        <label>Qty:</label>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="cart-item-card">
+                    <img src="../assests/24.png" alt="Product" class="item-img">
+                    <div class="item-info">
+                        <h3 class="item-name">T-shirts with multiple colors, for men and lady</h3>
+                        <p class="item-details">Size: Medium, Color: Blue, Material: cotton</p>
+                        <div class="item-actions">
+                            <a href="#" class="remove-btn">Remove</a>
+                            <span>|</span>
+                            <a href="#" class="save-later-btn">Save for later</a>
+                        </div>
+                    </div>
+                    <p class="item-price">$39.05</p>
+                    <div class="quantity-selector">
+                        <label>Qty:</label>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="cart-item-card">
+                    <img src="../assests/23.png" alt="Product" class="item-img">
+                    <div class="item-info">
+                        <h3 class="item-name">winter jackets with brown color, for men and lady</h3>
+                        <p class="item-details">Size: Medium, Color: brown, Material: leather</p>
+                        <div class="item-actions">
+                            <a href="#" class="remove-btn">Remove</a>
+                            <span>|</span>
+                            <a href="#" class="save-later-btn">Save for later</a>
+                        </div>
+                    </div>
+                    <p class="item-price">$76.50</p>
+                    <div class="quantity-selector">
+                        <label>Qty:</label>
+                         <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                </div>
+
+                 <div class="cart-item-card">
+                    <img src="../assests/5.png" alt="T-shirt" class="item-img">
+                    <div class="item-info">
+                        <h3 class="item-name">Travel bags in multiple colors, for men and lady</h3>
+                        <p class="item-details">Size: Medium, Color: Blue, Material: jean</p>
+                        <div class="item-actions">
+                            <a href="#" class="remove-btn">Remove</a>
+                            <span>|</span>
+                            <a href="#" class="save-later-btn">Save for later</a>
+                        </div>
+                    </div>
+                    <p class="item-price">$68.99</p>
+                    <div class="quantity-selector">
+                        <label>Qty:</label>
+                         <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                </div>
+
+          <div class="cart-item-card">
+                    <img src="../assests/15.png" alt="T-shirt" class="item-img">
+                    <div class="item-info">
+                        <h3 class="item-name">Waterproof matress for everyone</h3>
+                        <p class="item-details">Size: full, Color: Blue, Material: real form</p>
+                        <div class="item-actions">
+                            <a href="#" class="remove-btn">Remove</a>
+                            <span>|</span>
+                            <a href="#" class="save-later-btn">Save for later</a>
+                        </div>
+                    </div>
+                    <p class="item-price">$98.99</p>
+                    <div class="quantity-selector">
+                        <label>Qty:</label>
+                            <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                </div>
+
+                 <div class="cart-item-card">
+                    <img src="../assests/17.png" alt="T-shirt" class="item-img">
+                    <div class="item-info">
+                        <h3 class="item-name">Sofa chair with multiple colors, for everyone</h3>
+                        <p class="item-details">Size: Medium, Color: skin, Material: form ,woods</p>
+                        <div class="item-actions">
+                            <a href="#" class="remove-btn">Remove</a>
+                            <span>|</span>
+                            <a href="#" class="save-later-btn">Save for later</a>
+                        </div>
+                    </div>
+                    <p class="item-price">$88.99</p>
+                    <div class="quantity-selector">
+                        <label>Qty:</label>
+                             <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                </div>
+
+                 <div class="cart-item-card">
+                    <img src="../assests/7.png" alt="T-shirt" class="item-img">
+                    <div class="item-info">
+                        <h3 class="item-name">iPhone mobiles are best mobiles for everyone</h3>
+                        <p class="item-details">Size: Medium, Color: red, Material: Plastic</p>
+                        <div class="item-actions">
+                            <a href="#" class="remove-btn">Remove</a>
+                            <span>|</span>
+                            <a href="#" class="save-later-btn">Save for later</a>
+                        </div>
+                    </div>
+                    <p class="item-price">$99.99</p>
+                    <div class="quantity-selector">
+                        <label>Qty:</label>
+                            <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="cart-controls">
+                    <a href="index.html" class="back-to-shop-btn">
+                        <i class="fa-solid fa-arrow-left"></i> Back to shop
+                    </a>
+                    <a href="#" class="remove-all-btn">Remove all</a>
+                </div>
+            </section>
+
+
+            <section class="services-info">
+                <div class="service-card">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <div class="service-text">
+                        <h4>Secure payment</h4>
+                        <p>Have you ever finally just clarity info</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="service-text">
+                        <h4>Customer support</h4>
+                        <p>Have you ever finally just clarity info</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-truck"></i>
+                    <div class="service-text">
+                        <h4>Free delivery</h4>
+                        <p>Have you ever finally just clarity info</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="saved-for-later-section">
+                <h2>Saved for later</h2>
+                <div class="saved-items-grid">
+                    <div class="saved-item-card">
+                        <img src="../assests/image 32.png" alt="iPad Pro">
+                        <p class="item-price">$88.50</p>
+                        <p class="item-name">GoPro HERO9 4K iPad - black</p>
+                        <button class="move-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Move to cart</button>
+                    </div>
+                    <div class="saved-item-card">
+                        <img src="../assests/51.png" alt="iPhone 12">
+                        <p class="item-price">$99.50</p>
+                        <p class="item-name">GoPro HERO9 4K Action Camera - black</p>
+                        <button class="move-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Move to cart</button>
+                    </div>
+                    <div class="saved-item-card">
+                        <img src="../assests/image 35.png" alt="Apple Watch">
+                        <p class="item-price">$99.50</p>
+                        <p class="item-name">GoPro HERO9 4K Smartwatch - white</p>
+                        <button class="move-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Move to cart</button>
+                    </div>
+                    <div class="saved-item-card">
+                        <img src="../assests/image 23.png" alt="phones">
+                        <p class="item-price">$99.50</p>
+                        <p class="item-name"> Fast  Action phones - Blue</p>
+                        <button class="move-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Move to cart</button>
+                    </div>
+
+                    <div class="saved-item-card">
+                        <img src="../assests/22.png" alt="Laptop">
+                        <p class="item-price">$99.50</p>
+                        <p class="item-name">Blue leather coat for men - blue</p>
+                        <button class="move-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Move to cart</button>
+                    </div>
+
+                    <div class="saved-item-card">
+                        <img src="../assests/49.jpeg" alt="Laptop">
+                        <p class="item-price">$99.50</p>
+                        <p class="item-name">faster 4K Action AirPods - white</p>
+                        <button class="move-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Move to cart</button>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <aside class="cart-right-section">
+            <div class="order-summary">
+                <div class="coupon-section">
+                    <label>Have a coupon?</label>
+                    <div class="coupon-input">
+                        <input type="text" placeholder="Coupon code">
+                        <button class="apply-btn">Apply</button>
+                    </div>
+                </div>
+                <div class="summary-details">
+                    <div class="summary-item">
+                        <span>SUBTOTAL:</span>
+                        <span>$1403.99</span>
+                    </div>
+                    <div class="summary-item discount">
+                        <span>Discount:</span>
+                        <span>-$60.00</span>
+                    </div>
+                    <div class="summary-item tax">
+                        <span>Tax:</span>
+                        <span>+$14.00</span>
+                    </div>
+                    <div class="summary-item total">
+                        <span>Total:</span>
+                        <span>$1357.87</span>
+                    </div>
+                </div>
+                <a href="checkout.html" class="checkout-btn">Checkout</a>
+                <div class="payment-methods">
+                    <img src="../assests/Shape1.png" alt="Visa">
+                    <img src="../assests/shape2.png" alt="Mastercard">
+                    <img src="../assests/shape3.png" alt="PayPal">
+                    <img src="../assests/shape4.png" alt="Amex">
+                </div>
+            </div>
+        </aside>
+    </main>
+
+
+    <section class="discount-banner container">
+        <p>Super discount on more than 100 USD</p>
+        <button>Shop Now</button>
+    </section>
+
+    
+    <section class="newsletter-section">
+        <div class="newsletter-content">
+            <h2 class="newsletter-heading">Subscribe on our newsletter</h2>
+            <p class="newsletter-description">Get daily news on upcoming offers from many suppliers all over the world</p>
+            <div class="newsletter-form">
+                <div class="form-input-container">
+                    <i class="fa-regular fa-envelope email-icon"></i>
+                    <input type="email" placeholder="Email" class="email-input">
+                </div>
+                <button class="subscribe-button">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-content-container"> 
+            <div class="footer-section brand-info">
+                <div class="logo">
+                    <img src="../assests/logo-symbol pic.png" alt="Symbol">
+                    <img src="../assests/(logo pic).png" alt="Brand Logo">
+                </div>
+                <p>Your one-stop shop for all your needs.
+                    <br>Delivering quality and convenience right to your doorstep.
+                </p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links-columns">
+                <div class="footer-column">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Find store</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Partnership</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Find store</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Money Refund</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>For users</h4>
+                    <ul>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">My Orders</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-section app-links">
+                <h4>Get app</h4>
+                <a href="#"><img src="../assests/in footer (app-store button pic).png" alt="App Store"></a>
+                <a href="#"><img src="../assests/in footer (google-play button pic).png" alt="Google Play"></a>
+            </div>
+        </div>
+        <div class="footer-bottom-container">
+            <p>&copy; 2023 Ecommerce.</p>
+            <div class="language-selector">
+                <img src="../assests/32.png" alt="English Flag">
+                <span>English <i class="fa-solid fa-angle-up"></i></span>
+            </div>
+        </div>
+    </footer>
+
+
+        <script src="../javascript/script.js"></script>
+
+</body>
+</html>
