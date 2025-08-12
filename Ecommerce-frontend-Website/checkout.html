@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="top-bar">
+            <div class="logo">
+                <img src="../assests/logo-symbol pic.png" alt="Symbol">
+                <img src="../assests/(logo pic).png" alt="Brand Logo">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <select>
+                    <option>All category</option>
+                </select>
+                <button>Search</button>
+            </div>
+            <div class="user-actions">
+                <a href="#" class="icon-link">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Profile</span>
+                </a>
+                <a href="#" class="icon-link">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>Message</span>
+                </a>
+                <a href="#" class="icon-link">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>Orders</span>
+                </a>
+                <a href="cart.html" class="icon-link cart-link" id="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart-count" class="cart-count">0</span>
+                    <span>My cart</span>
+                </a>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="dropdown"><a href="#"><i class="fa-solid fa-bars"></i> All category</a></li>
+                <li><a href="#">Hot offers</a></li>
+                <li><a href="#">Gift boxes</a></li>
+                <li><a href="#">Projects</a></li>
+                <li class="dropdown"><a href="#">Menu item</a></li> 
+                <li class="dropdown"><a href="#">Help <i class="fa-solid fa-angle-down"></i></a></li>
+            </ul>
+            <div class="nav-extra">
+                <div class="language-currency">
+                    <select><option>English, USD</option></select>
+                </div>
+                <div class="shipping-info">
+                    <select><option>Ship to <img src="../assests/37.png" alt="germany"></option></select>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="checkout-main-container">
+        <div class="checkout-left-section">
+            <section class="checkout-form-section">
+                <h2>Billing details</h2>
+                <form id="checkout-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name *</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name *</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="company-name">Company Name (Optional)</label>
+                        <input type="text" id="company-name" name="company-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="street-address">Street Address *</label>
+                        <input type="text" id="street-address" name="street-address" placeholder="House number and street name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">Town / City *</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="zip-code">Postcode / ZIP *</label>
+                        <input type="text" id="zip-code" name="zip-code" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="order-notes">Order notes (Optional)</label>
+                        <textarea id="order-notes" name="order-notes" rows="4" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+        <aside class="checkout-right-section">
+            <div class="order-summary-checkout">
+                <h3>Your order</h3>
+                <div class="summary-details-checkout">
+                    <div class="summary-item-checkout">
+                        <span>Product</span>
+                        <span>Total</span>
+                    </div>
+                    <div class="product-item-checkout">
+                        <span>Headphones x 1</span>
+                        <span>$98.99</span>
+                    </div>
+                    <div class="product-item-checkout">
+                        <span>T-shirts x 1</span>
+                        <span>$39.05</span>
+                    </div>
+                    <div class="product-item-checkout">
+                        <span>Winter jacket x 1</span>
+                        <span>$76.50</span>
+                    </div>
+                    <div class="summary-item-checkout subtotal">
+                        <span>Subtotal</span>
+                        <span>$214.54</span>
+                    </div>
+                    <div class="summary-item-checkout shipping">
+                        <span>Shipping</span>
+                        <span>Free Shipping</span>
+                    </div>
+                    <div class="summary-item-checkout total">
+                        <span>Total</span>
+                        <span>$214.54</span>
+                    </div>
+                </div>
+
+                <div class="payment-methods-checkout">
+                    <div class="payment-option">
+                        <input type="radio" id="direct-bank" name="payment-method" checked>
+                        <label for="direct-bank">Direct bank transfer</label>
+                    </div>
+                    <div class="payment-option">
+                        <input type="radio" id="cash-delivery" name="payment-method">
+                        <label for="cash-delivery">Cash on delivery</label>
+                    </div>
+                    <div class="payment-option">
+                        <input type="radio" id="paypal" name="payment-method">
+                        <label for="paypal">PayPal</label>
+                        <img src="../assests/shape3.png" alt="PayPal">
+                    </div>
+                </div>
+
+                <button class="place-order-btn">Place order</button>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content-container"> 
+            <div class="footer-section brand-info">
+                <div class="logo">
+                    <img src="../assests/logo-symbol pic.png" alt="Symbol">
+                    <img src="../assests/(logo pic).png" alt="Brand Logo">
+                </div>
+                <p>Your one-stop shop for all your needs.
+                    <br>Delivering quality and convenience right to your doorstep.
+                </p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links-columns">
+                <div class="footer-column">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Find store</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Partnership</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Find store</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Money Refund</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>For users</h4>
+                    <ul>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">My Orders</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-section app-links">
+                <h4>Get app</h4>
+                <a href="#"><img src="../assests/in footer (app-store button pic).png" alt="App Store"></a>
+                <a href="#"><img src="../assests/in footer (google-play button pic).png" alt="Google Play"></a>
+            </div>
+        </div>
+        <div class="footer-bottom-container">
+            <p>&copy; 2023 Ecommerce.</p>
+            <div class="language-selector">
+                <img src="../assests/32.png" alt="English Flag">
+                <span>English <i class="fa-solid fa-angle-up"></i></span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

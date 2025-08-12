@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website</title>
+    
+    <link rel="stylesheet" href="../css/style.css"> 
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="top-bar">
+            <div class="logo">
+                <img src="../assests/logo-symbol pic.png" alt="Symbol">
+                <img src="../assests/(logo pic).png" alt="Brand Logo">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <select>
+                    <option>All category</option>
+                    <option>Electronics</option>
+                    <option>Cloths and Wear</option>
+                    <option>Home Interiors</option>
+                    <option>Computer Mobiles</option>
+                    <option>Headphones</option>
+                    <option>Machinery tools</option>
+                </select>
+                <button>Search</button>
+            </div>
+            <div class="user-actions">
+                <a href="#" class="icon-link">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Profile</span>
+                </a>
+                <a href="#" class="icon-link">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>Message</span>
+                </a>
+                <a href="#" class="icon-link">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>Orders</span>
+                </a>
+                 <a href="cart.html" class="icon-link cart-link" id="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart-count" class="cart-count">0</span>
+                    <span>My cart</span>
+                </a>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="dropdown">
+                    <a href="#">
+                        <i class="fa-solid fa-bars"></i> All category
+                    </a>
+                    <div class="dropdown-content category-dropdown">
+                        <a href="#">Cloths and Wear</a>
+                        <a href="#">Home Interiors</a>
+                        <a href="#">Computer and Mobiles</a>
+                        <a href="#">Headphones</a>
+                        <a href="#">Machinery tools</a>
+                        <a href="#">Electronics</a>
+                    </div>
+                </li>
+                <li><a href="#">Hot offers</a></li>
+                <li><a href="#">Gift boxes</a></li>
+                <li><a href="#">Projects</a></li>
+                <li class="dropdown"><a href="#">Menu item</a></li> 
+                <li class="dropdown">
+                    <a href="#">Help <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="dropdown-content help-dropdown">
+                        <a href="#">Help Center</a>
+                        <a href="#">FAQs</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Shipping & Returns</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="nav-extra">
+                <div class="language-currency">
+                    <select>
+                        <option>English, USD</option>
+                    </select>
+                </div>
+                <div class="shipping-info">
+                    <select>
+                        <option>Ship to <img src="../assests/37.png" alt="germany"></option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-content-wrapper">
+        <div class="home-hero-area">
+            <div class="hero-sidebar">
+                <ul class="category-list">
+                    <li><a href="#">Automobiles</a></li>
+                    <li><a href="#">Clothes and wear</a></li>
+                    <li><a href="#">Home interiors</a></li>
+                    <li><a href="#">Computer and tech</a></li>
+                    <li><a href="#">Tools, equipments</a></li>
+                    <li><a href="#">Sports and outdoor</a></li>
+                    <li><a href="#">Animal and pets</a></li>
+                    <li><a href="#">Machinery tools</a></li>
+                    <li><a href="#">More category</a></li>
+                </ul>
+            </div>
+            <div class="hero-main-banner-container">
+                <div class="main-banner">
+                    <img src="../assests/home page (banner pic).png" alt="Latest trending electronic items">
+                    <div class="banner-text">
+                        <p>Latest trending</p>
+                        <h1>Electronic items</h1>
+                        <a href="#" class="btn-learn-more">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right-panel">
+                <div class="user-panel">
+                    <div class="user-info">
+                        <i class="fa-regular fa-user-circle"></i>
+                        <p>Hi, user<br>let's get started</p>
+                    </div>
+                    <a href="#" class="btn-primary">Join now</a>
+                    <a href="#" class="btn-outline">Log in</a>
+                </div>
+                <div class="promo-panel promo-orange">
+                    <p>Get US $10 off<br>with a new supplier</p>
+                </div>
+                <div class="promo-panel promo-blue">
+                    <p>Send quotes with<br>supplier preferences</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-content-wrapper">
+        <section class="deals-offers-section">
+            <div class="deals-header-box">
+                <div class="deals-info">
+                    <h2>Deals and offers</h2>
+                    <p>Hygiene equipments</p>
+                </div>
+                <div class="countdown-timer">
+                    <div class="timer-box">
+                        <span class="timer-value">04</span>
+                        <span class="timer-label">Days</span>
+                    </div>
+                    <div class="timer-box">
+                        <span class="timer-value">13</span>
+                        <span class="timer-label">Hour</span>
+                    </div>
+                    <div class="timer-box">
+                        <span class="timer-value">34</span>
+                        <span class="timer-label">Min</span>
+                    </div>
+                    <div class="timer-box">
+                        <span class="timer-value">56</span>
+                        <span class="timer-label">Sec</span>
+                    </div>
+                </div>
+            </div>
+            <div class="deals-products-grid">
+                <div class="deals-product-card">
+                    <img src="../assests/1.png" alt="Smart watch">
+                    <p class="product-name">Smart watches</p>
+                    <span class="discount-badge">-25%</span>
+                </div>
+                <div class="deals-product-card">
+                    <img src="../assests/8.png" alt="Laptops">
+                    <p class="product-name">Laptops</p>
+                    <span class="discount-badge">-15%</span>
+                </div>
+                <div class="deals-product-card">
+                    <img src="../assests/3.png" alt="GoPro cameras">
+                    <p class="product-name">Pro cameras</p>
+                    <span class="discount-badge">-40%</span>
+                </div>
+                <div class="deals-product-card">
+                    <img src="../assests/4.png" alt="Headphones">
+                    <p class="product-name">Headphones</p>
+                    <span class="discount-badge">-25%</span>
+                </div>
+                <div class="deals-product-card">
+                    <img src="../assests/2.png" alt="Mobile">
+                    <p class="product-name">Mobile Phones</p>
+                    <span class="discount-badge">-25%</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-category-section">
+            <div class="category-promo-box" style="background-image: url('../assests/11.png');">
+                <h3>Home and outdoor</h3>
+                <a href="home-and-outdoor-listing.html" class="btn-source-now">Source now</a>
+            </div>
+            
+            <div class="category-products-grid">
+                <div class="product-card-small">
+                    <div class="card-text">
+                        <p>Sofa chairs</p>
+                        <span>From USD 19</span>
+                    </div>
+                    <img src="../assests/17.png" alt="sofa-chairs">
+                </div>
+                <div class="product-card-small">
+                    <div class="card-text">
+                        <p>Lamps</p>
+                        <span>From USD 19</span>
+                    </div>
+                    <img src="../assests/16.png" alt="Lamps">
+                </div>
+                <div class="product-card-small">
+                    <div class="card-text">
+                        <p>Waterproof mstress</p>
+                        <span>From USD 19</span>
+                    </div>
+                    <img src="../assests/15.png" alt="Waterproof mattres">
+                </div>
+                <div class="product-card-small">
+                    <div class="card-text">
+                        <p>Bowls</p>
+                        <span>From USD 19</span>
+                    </div>
+                    <img src="../assests/14.png" alt="Bowls">
+                </div>
+                <div class="product-card-small">
+                    <div class="card-text">
+                        <p>Jucier</p>
+                        <span>From USD 100</span>
+                    </div>
+                    <img src="../assests/20.png" alt="Jucier">
+                </div>
+                <div class="product-card-small">
+                    <div class="card-text">
+                        <p>Blenders</p>
+                        <span>From USD 39</span>
+                    </div>
+                    <img src="../assests/19.png" alt="Blenders">
+                </div>
+                <div class="product-card-small">
+                    <div class="card-text">
+                        <p>Hangers</p>
+                        <span>From USD 19</span>
+                    </div>
+                    <img src="../assests/18.png" alt="Hangers">
+                </div>
+                <div class="product-card-small">
+                    <div class="card-text">
+                        <p>vase</p>
+                        <span>From USD 10</span>
+                    </div>
+                    <img src="../assests/13.png" alt="vase">
+                </div>
+            </div>
+        </section>
+
+        <section class="product-category-section">
+            <div class="category-promo-box" style="background-image: url('../assests/12.png');">
+                <h3>Consumer electronics and gadgets</h3>
+                <a href="product-listing.html" class="btn-source-now">Source now</a>
+            </div>
+            
+            <div class="category-products-grid">
+                <div class="product-card-small">
+                    <div class="card-text">
+                        <p>Smart watches</p>
+                        <span>From USD 19</span>
+                    </div>
+                    <img src="../assests/1.png" alt="Smart watch">
+                </div>
+                <div class="product-card-small">
+                    <div class="card-text">
+                        <p>Cameras</p>
+                        <span>From USD 19</span>
+                    </div>
+                    <img src="../assests/3.png" alt="Cameras">
+                </div>
+                <div class="product-card-small">
+                    <div class="card-text">
+                        <p>Headphones</p>
+                        <span>From USD 19</span>
+                    </div>
+                    <img src="../assests/10.png" alt="Headphones">
+                </div>
+                <div class="product-card-small">
+                    <div class="card-text">
+                        <p>kettle</p>
+                        <span>From USD 19</span>
+                    </div>
+                    <img src="../assests/41.png" alt="kettle">
+                </div>
+                <div class="product-card-small">
+                    <div class="card-text">
+                        <p>Headphones</p>
+                        <span>From USD 100</span>
+                    </div>
+                    <img src="../assests/4.png" alt="Headphones">
+                </div>
+                <div class="product-card-small">
+                    <div class="card-text">
+                        <p>Laptops & PC</p>
+                        <span>From USD 39</span>
+                    </div>
+                    <img src="../assests/8.png" alt="Laptops & PC">
+                </div>
+                <div class="product-card-small">
+                    <div class="card-text">
+                        <p>IPads</p>
+                        <span>From USD 19</span>
+                    </div>
+                    <img src="../assests/6.png" alt="IPads">
+                </div>
+                <div class="product-card-small">
+                    <div class="card-text">
+                        <p>Smart Phones</p>
+                        <span>From USD 10</span>
+                    </div>
+                    <img src="../assests/7.png" alt="Smart Phones ">
+                </div>
+            </div>
+        </section>
+
+        <section class="supplier-request-section">
+            <div class="supplier-request-content">
+                <div class="request-promo-text">
+                    <h2>An easy way to send requests to all suppliers</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                
+                <div class="request-form-card">
+                    <h3>Send quote to suppliers</h3>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <input type="text" id="item-needed" name="item-needed" placeholder="What item you need?">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="more-details" name="more-details" rows="4" placeholder="Type more details"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group quantity-input">
+                                <input type="text" id="quantity" name="quantity" placeholder="Quantity">
+                            </div>
+                            <div class="form-group unit-select">
+                                <select id="unit" name="unit">
+                                    <option>Pcs</option>
+                                    <option>Units</option>
+                                    <option>Kg</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-send-inquiry">Send inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="separate-product-grid-section">
+            <h2 class="section-heading">Recommended items</h2> 
+            
+        </section>
+
+        <section class="separate-product-grid-section">
+            <div class="product-list-grid">
+                <div class="product-card-large">
+                    <img src="../assests/24.png" alt="Blue Shirt" class="product-image">
+                    <p class="product-price">$10.30</p>
+                    <p class="product-description">T-shirts with multiple colors, for men</p>
+                </div>
+                
+                <div class="product-card-large">
+                    <img src="../assests/23.png" alt="Brown Jacket" class="product-image">
+                    <p class="product-price">$10.30</p>
+                    <p class="product-description">Jeans shorts for men blue color</p>
+                </div>
+                
+                <div class="product-card-large">
+                    <img src="../assests/22.png" alt="Blue Blazer" class="product-image">
+                    <p class="product-price">$12.50</p>
+                    <p class="product-description">Blue winter coat medium size</p>
+                </div>
+                
+                <div class="product-card-large">
+                    <img src="../assests/5.png" alt="Travel bag " class="product-image">
+                    <p class="product-price">$34.00</p>
+                    <p class="product-description">Jeans bag for travel for men & women</p>
+                </div>
+                
+                <div class="product-card-large">
+                    <img src="../assests/21.png" alt="Blue wallet" class="product-image">
+                    <p class="product-price">$99.00</p>
+                    <p class="product-description">Leather wallet</p>
+                </div>
+                
+                <div class="product-card-large">
+                    <img src="../assests/25.png" alt="Jeans Shorts" class="product-image">
+                    <p class="product-price">$9.99</p>
+                    <p class="product-description">Canon camera black, 100x zoom</p>
+                </div>
+                
+                <div class="product-card-large">
+                    <img src="../assests/10.png" alt="Headset" class="product-image">
+                    <p class="product-price">$8.99</p>
+                    <p class="product-description">Headset for gaming with mic</p>
+                </div>
+                
+                <div class="product-card-large">
+                    <img src="../assests/1.png" alt="Smart watches" class="product-image">
+                    <p class="product-price">$10.30</p>
+                    <p class="product-description">Smartwatch silver color modern</p>
+                </div>
+
+                <div class="product-card-large">
+                    <img src="../assests/8.png" alt="Laptops" class="product-image">
+                    <p class="product-price">$10.30</p>
+                    <p class="product-description">Best Laptops in color modern</p>
+                </div>
+
+                <div class="product-card-large">
+                    <img src="../assests/2.png" alt="Mobile phones" class="product-image">
+                    <p class="product-price">$10.30</p>
+                    <p class="product-description">Best Mobile phones</p>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="extra-services-section">
+            <h2>Our extra services</h2>
+            <div class="services-container">
+                <div class="service-card">
+                    <div class="card-image-box">
+                        <img src="../assests/29.png" alt="Sourcing" class="service-image">
+                        <span class="icon-circle">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                    </div>
+                    <p class="service-description">Source from Industry Hubs</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="card-image-box">
+                        <img src="../assests/27.png" alt="Customization" class="service-image">
+                        <span class="icon-circle">
+                            <i class="fa-regular fa-clipboard"></i>
+                        </span>
+                    </div>
+                    <p class="service-description">Customize Your Products</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="card-image-box">
+                        <img src="../assests/26.png" alt="Shipping" class="service-image">
+                        <span class="icon-circle">
+                            <i class="fa-solid fa-plane-up"></i>
+                        </span>
+                    </div>
+                    <p class="service-description">Fast, reliable shipping by ocean or air</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-image-box">
+                        <img src="../assests/28.png" alt="Inspection" class="service-image">
+                        <span class="icon-circle">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </span>
+                    </div>
+                    <p class="service-description">Product monitoring and inspection</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="suppliers-section">
+            <h2>Suppliers by region</h2>
+            <div class="suppliers-grid">
+                <div class="supplier-card">
+                    <img src="../assests/30.png" alt="Arabic Emirates Flag" class="supplier-flag">
+                    <div class="supplier-info">
+                        <p class="country-name">Arabic Emirates</p>
+                        <span class="shop-url">shopname.ae</span>
+                    </div>
+                </div>
+
+                <div class="supplier-card">
+                    <img src="../assests/32.png" alt="Australia Flag" class="supplier-flag">
+                    <div class="supplier-info">
+                        <p class="country-name">Australia</p>
+                        <span class="shop-url">shopname.au</span>
+                    </div>
+                </div>
+
+                <div class="supplier-card">
+                    <img src="../assests/40.png" alt="United States Flag" class="supplier-flag">
+                    <div class="supplier-info">
+                        <p class="country-name">United States</p>
+                        <span class="shop-url">shopname.us</span>
+                    </div>
+                </div>
+
+                <div class="supplier-card">
+                    <img src="../assests/39.png" alt="Russia Flag" class="supplier-flag">
+                    <div class="supplier-info">
+                        <p class="country-name">Russia</p>
+                        <span class="shop-url">shopname.ru</span>
+                    </div>
+                </div>
+                
+                <div class="supplier-card">
+                    <img src="../assests/38.png" alt="Italy Flag" class="supplier-flag">
+                    <div class="supplier-info">
+                        <p class="country-name">Italy</p>
+                        <span class="shop-url">shopname.it</span>
+                    </div>
+                </div>
+
+                <div class="supplier-card">
+                    <img src="../assests/34.png" alt="Denmark Flag" class="supplier-flag">
+                    <div class="supplier-info">
+                        <p class="country-name">Denmark</p>
+                        <span class="shop-url">shopname.dk</span>
+                    </div>
+                </div>
+                
+                <div class="supplier-card">
+                    <img src="../assests/35.png" alt="France Flag" class="supplier-flag">
+                    <div class="supplier-info">
+                        <p class="country-name">France</p>
+                        <span class="shop-url">shopname.fr</span>
+                    </div>
+                </div>
+                
+                <div class="supplier-card">
+                    <img src="../assests/31.png" alt="Arabic Emirates Flag" class="supplier-flag">
+                    <div class="supplier-info">
+                        <p class="country-name">Arabic Emirates</p>
+                        <span class="shop-url">shopname.ae</span>
+                    </div>
+                </div>
+                
+                <div class="supplier-card">
+                    <img src="../assests/33.png" alt="China Flag" class="supplier-flag">
+                    <div class="supplier-info">
+                        <p class="country-name">China</p>
+                        <span class="shop-url">shopname.cn</span>
+                    </div>
+                </div>
+                
+                <div class="supplier-card">
+                    <img src="../assests/36.png" alt="Great Britain Flag" class="supplier-flag">
+                    <div class="supplier-info">
+                        <p class="country-name">Great Britain</p>
+                        <span class="shop-url">shopname.uk</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="newsletter-section">
+            <div class="newsletter-content">
+                <h2 class="newsletter-heading">Subscribe on our newsletter</h2>
+                <p class="newsletter-description">Get daily news on upcoming offers from many suppliers all over the world</p>
+                <div class="newsletter-form">
+                    <div class="form-input-container">
+                        <i class="fa-regular fa-envelope email-icon"></i>
+                        <input type="email" placeholder="Email" class="email-input">
+                    </div>
+                    <button class="subscribe-button">Subscribe</button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <footer class="main-footer">
+        <div class="footer-content-container"> 
+            <div class="footer-section brand-info">
+                <div class="logo">
+                    <img src="../assests/logo-symbol pic.png" alt="Symbol">
+                    <img src="../assests/(logo pic).png" alt="Brand Logo">
+                </div>
+                <p>Your one-stop shop for all your needs.
+                    <br>Delivering quality and convenience right to your doorstep.
+                </p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links-columns">
+                <div class="footer-column">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Find store</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Partnership</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Find store</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Money Refund</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>For users</h4>
+                    <ul>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">My Orders</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-section app-links">
+                <h4>Get app</h4>
+                <a href="#"><img src="../assests/in footer (app-store button pic).png" alt="App Store"></a>
+                <a href="#"><img src="../assests/in footer (google-play button pic).png" alt="Google Play"></a>
+            </div>
+        </div>
+        <div class="footer-bottom-container">
+            <p>&copy; 2023 Ecommerce.</p>
+            <div class="language-selector">
+                <img src="../assests/32.png" alt="English Flag">
+                <span>English <i class="fa-solid fa-angle-up"></i></span>
+            </div>
+        </div>
+    </footer>
+
+
+        <script src="../javascript/script.js"></script>
+
+</body>
+</html>
